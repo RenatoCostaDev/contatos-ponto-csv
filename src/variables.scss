@@ -1,0 +1,31 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+$clr-primary-1: hsl(205, 86%, 17%);
+$clr-primary-3: hsl(205, 72%, 37%);
+$clr-primary-5: hsl(205, 78%, 60%);
+$clr-primary-8: hsl(205, 86%, 81%);
+$clr-primary-10: hsl(205, 100%, 96%);
+$clr-white: #fff;
+$clr-green-light: hsl(125, 71%, 66%);
+$clr-grey-1: hsl(209, 61%, 16%);
+$clr-red-light: hsl(360, 71%, 66%);
+
+$fontFamily: "Poppins", Poppins, "Montserrat", sans-serif;
+
+@mixin centerItens($position) {
+  align-items: center;
+  display: flex;
+  justify-content: $position;
+}
+@mixin margin-padding($marg, $padd) {
+  margin: $marg;
+  padding: $padd;
+}
+@mixin bk-color-color($bk, $words) {
+  background-color: $bk;
+  color: $words;
+}

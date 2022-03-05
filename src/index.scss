@@ -1,0 +1,95 @@
+@import "./variables.scss";
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $fontFamily;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(16, 4, 60),
+    rgb(16, 98, 186)
+  );
+  color: $clr-grey-1;
+  font-size: 20px;
+}
+/*
+=============== 
+  Droparea
+===============
+*/
+.headtitle {
+  font-size: 50px;
+  text-shadow: 2px 2px 2px $clr-primary-1;
+}
+.droparea {
+  background-color: $clr-primary-5;
+  & button {
+    font-weight: bold;
+  }
+  & button:hover {
+    @include bk-color-color($clr-primary-1, $clr-red-light);
+  }
+}
+
+.subtitle {
+  color: $clr-primary-3;
+}
+.title {
+  color: $clr-white;
+}
+#droparea:hover {
+  background-color: $clr-green-light;
+}
+/*
+=============== 
+  Inputarea
+===============
+*/
+.inputarea {
+  background-color: $clr-primary-8;
+  padding: 35px;
+}
+.contentarea {
+  background-color: $clr-primary-10;
+}
+#txtLink {
+  color: $clr-white;
+  text-decoration: none;
+}
+#btnCadastrar:hover {
+  @include bk-color-color($clr-primary-1, $clr-red-light);
+}
+#btnBaixar:hover {
+  @include bk-color-color($clr-primary-1, $clr-red-light);
+}
+#txtLink:hover {
+  color: $clr-red-light;
+}
+/*
+=============== 
+  Tablearea
+===============
+*/
+.tablearea {
+  @include bk-color-color($clr-primary-5, $clr-white);
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.btnDelete {
+  font-size: 30px;
+}
+.btnDelete:hover {
+  box-shadow: 5px 2px 2px $clr-primary-1;
+  font-size: 30px;
+}
