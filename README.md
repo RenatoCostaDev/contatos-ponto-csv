@@ -20,3 +20,4 @@ Modo de usar:
 -Baixe o arquivo;
 -npm install;
 -npm start;
+Obs: o app foi feito estilo Mobile first !
